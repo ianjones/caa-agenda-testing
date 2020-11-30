@@ -1,0 +1,13 @@
+---
+layout: page
+title: Questions
+permalink: /questions/
+---
+<ul>
+  {% for question in site.questions %}
+    <li>
+      <h2><a href="{{ question.url }}">{{ question.question_text }}</a></h2>
+      {{ question.excerpt }}
+    </li>
+  {% endfor %}
+</ul>
