@@ -33,6 +33,11 @@ collections:
     contributors:
         output: true
 
+header_pages:
+  - index.markdown
+  - contributors.html
+  - questions.html
+        
 defaults:
   - scope:
       path: ""

@@ -7,7 +7,7 @@ permalink: /contributors/
   {% assign sorted_team = site.contributors | sort:'surname' %}
   {% for contributor in sorted_team %}
     <li>
-      <h3><a href="{{ contributor.url }}">{{ contributor.firstname }} {{ contributor.surname }}</a>, {{ contributor.affiliation }}</h3>
+      <h4><a href="{{ contributor.url | relative_url }}">{{ contributor.firstname }} {{ contributor.surname }}</a>, {{ contributor.affiliation }}</h4>
       {{ contributor.excerpt }}
     </li>
   {% endfor %}
