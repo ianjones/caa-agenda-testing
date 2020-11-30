@@ -1,4 +1,5 @@
 ---
+layout: contributor
 username: georgekinnear
 firstname: George
 surname: Kinnear
