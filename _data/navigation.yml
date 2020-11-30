@@ -1,0 +1,7 @@
+main:
+  - title: "About the project"
+    url: /
+  - title: "Contributors"
+    url: /contributors/
+  - title: "Questions"
+    url: /questions/
