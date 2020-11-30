@@ -12,3 +12,14 @@ layout: default
 </ul>
 
 {{ content }}
+
+<h2>Questions</h2>
+
+<p>{{ page.firstname }} is a contributor to these questions:</p>
+
+<ul>
+  {% assign filtered_questions = site.questions | where: "contributors" , page.username %}
+  {% for qn in filtered_questions %}
+    <li><a href="{{ qn.url }}">{{ qn.question_text }}</a></li>
+  {% endfor %}
+</ul>

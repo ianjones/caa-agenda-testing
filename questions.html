@@ -3,11 +3,34 @@ layout: page
 title: Questions
 permalink: /questions/
 ---
+
+<table>
+<!--	<colgroup>
+	<col width="20%" />
+	<col width="80%" />
+	</colgroup>-->
+<thead>
+	<tr class="header">
+		<th>Code</th>
+		<th>Question</th>
+	</tr>
+</thead>
+<tbody>
+{% for question in site.questions %}
+<tr>
+	<td><a href="{{ question.url }}">{{ question.question_code }}</a></td>
+	<td>{{ question.question_text }}</td>
+</tr>
+{% endfor %}
+</tbody>
+</table>
+<!--
 <ul>
   {% for question in site.questions %}
     <li>
-      <h2><a href="{{ question.url }}">{{ question.question_text }}</a></h2>
+      <h4><a href="{{ question.url }}">{{ question.question_text }}</a></h4>
       {{ question.excerpt }}
     </li>
   {% endfor %}
 </ul>
+-->
