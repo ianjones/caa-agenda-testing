@@ -16,7 +16,9 @@ permalink: /questions/
 	</tr>
 </thead>
 <tbody>
-{% for question in site.questions %}
+
+{% assign sorted_qs = site.questions | sort: "question_num" %}
+{% for question in sorted_qs %}
 <tr>
 	<td><a href="{{ question.url }}">{{ question.question_code }}</a></td>
 	<td>{{ question.question_text }}</td>
