@@ -46,7 +46,7 @@ defaults:
       layout: "question"
         
 # Build settings
-theme: minima
+theme: jekyll-theme-time-machine
 plugins:
   - jekyll-feed
  
